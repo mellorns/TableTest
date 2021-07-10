@@ -106,7 +106,7 @@ function deleteRow(e) {
     if (e.target.className !== "item-deleter") return;
     const index = Number(e.target.parentElement.dataset.userId)
     e.target.parentElement.remove()
-    state.splice(index)
+    state.splice(index,1)
 }
 
 table.addEventListener('click', openModal)
