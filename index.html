@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UsersTable</title>
+    <link rel="stylesheet" href="table.css"/>
+    <link rel="stylesheet" href="modal.css"/>
+    <link rel="stylesheet" href="formStyle.css"/>
+
+</head>
+<body>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">×</span>
+            <h2>Additional User's Information</h2>
+        </div>
+        <div class="modal-body">
+            <table id="modal" class="content-table">
+                <thead>
+                <tr class="tr">
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>Geo</th>
+                    <th>ZipCode</th>
+                    <th>Company</th>
+                </tr>
+                </thead>
+                <tbody id="modalData" class="tbody-modal">
+                </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+            <h3></h3>
+        </div>
+    </div>
+</div>
+<div class="block">
+    <table id="gable" class="content-table">
+        <thead id="thead">
+        <tr>
+            <th  onclick="sortColumn('name')">Name</th>
+            <th  onclick="sortColumn('username')">UserName</th>
+            <th onclick="sortColumn('email')">Email</th>
+            <th  onclick="sortColumn('website')">WebSite</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name="name" class="user-input">
+            </td>
+            <td>
+                <input type="text" name="username" class="user-input">
+            </td>
+            <td>
+                <input type="text" name="email" class="user-input">
+            </td>
+            <td>
+                <input type="text" name="website" class="user-input">
+            </td>
+            <td>
+                <input type="button" name="add" value="Add user" onclick="addUser()"/>
+            </td>
+        </tr>
+        </thead>
+        <tbody id="tableData">
+        </tbody>
+    </table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+<script>
+
+</script>

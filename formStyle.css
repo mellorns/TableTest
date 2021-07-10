@@ -1,0 +1,9 @@
+.formStyle{
+    width: 300px;
+    position: relative;
+
+    display: inline-block;
+}
+.item-deleter, .personal-name {
+    cursor: pointer;
+}
