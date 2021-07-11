@@ -71,7 +71,7 @@ window.onload = () => {
     getData()
 }
 
-//this function is attached the button  and will execute when user click on it
+
 function getData() {
     return fetch('https://jsonplaceholder.typicode.com/users')
         .then(response => response.json())
@@ -82,7 +82,7 @@ function getData() {
         .then(appendData)
 }
 
-//this function appends the json data to the table 'gable'
+
 const table = document.getElementById('tableData');
 
 function openModal(e) {
