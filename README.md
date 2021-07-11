@@ -1,6 +1,7 @@
 # Table with Users
 ---
 Implemented table by using only HTML, CSS and pure JS.
+![TableImg](Screenshot_1.png)
 ---
 ## __Installation__
 
