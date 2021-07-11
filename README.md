@@ -9,7 +9,7 @@ Implemented table by using only HTML, CSS and pure JS.
 https://github.com/mellorns/TableTest.git
 ```
 2.or follow this link
-```
-https://mellorns.github.io/TableTest/
-```
+
+[https://mellorns.github.io/TableTest/](https://mellorns.github.io/TableTest/)
+
   
