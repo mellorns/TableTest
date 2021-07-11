@@ -2,7 +2,7 @@
 ---
 Implemented table by using only HTML, CSS and pure JS.
 ---
-##__Installation__
+## __Installation__
 
 1.Clone the repo
 ```
