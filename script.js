@@ -16,7 +16,9 @@ let state = []
 let sortDirection = false
 
 function addUser() {
+    let last = state.length - 1
     let user = {
+        id: state[last] ? state[last].id + 1 : 1,
         name: null,
         username: null,
         email: null,
@@ -43,8 +45,7 @@ function addUser() {
         input.value = ''
     }
     state.push(user)
-    const index = state.length - 1
-    appendElem(state[index], index)
+    appendElem(user, user.id - 1)
 }
 
 function sortColumn(columnName) {
@@ -71,7 +72,7 @@ window.onload = () => {
     getData()
 }
 
-
+//this function is attached the button  and will execute when user click on it
 function getData() {
     return fetch('https://jsonplaceholder.typicode.com/users')
         .then(response => response.json())
@@ -82,7 +83,7 @@ function getData() {
         .then(appendData)
 }
 
-
+//this function appends the json data to the table 'gable'
 const table = document.getElementById('tableData');
 
 function openModal(e) {
@@ -106,7 +107,8 @@ function deleteRow(e) {
     if (e.target.className !== "item-deleter") return;
     const index = Number(e.target.parentElement.dataset.userId)
     e.target.parentElement.remove()
-    state.splice(index,1)
+    state = state.filter( user => user.id !== index + 1)
+    // state.splice(index,1)
 }
 
 table.addEventListener('click', openModal)
